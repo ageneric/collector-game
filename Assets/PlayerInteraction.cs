@@ -48,7 +48,7 @@ public class PlayerInteraction : MonoBehaviour
         }
 
         // We only interact with the closest collider
-        Debug.Log(minDistance);
+        // Debug.Log(minDistance);
 
         if (minDistance > 1000f)
         {

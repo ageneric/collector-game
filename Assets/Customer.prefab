@@ -131,9 +131,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b347bc1e0ce26e409073b20c26ad2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardManager: {fileID: 11400000, guid: 1e896646e0d01b7449cdd8506b9eedf1, type: 2}
   cardCollection: []
+  givenCard:
+    name: 
+    type: 
+    color: 
+    grade: 0
+    iconArt: {fileID: 0}
+    fullArt: {fileID: 0}
+  desiredCard:
+    name: 
+    type: 
+    color: 
+    grade: 0
+    iconArt: {fileID: 0}
+    fullArt: {fileID: 0}
   displayObject: {fileID: 6344174299835559248}
   bubbleObject: {fileID: 7451119148314443244}
+  isGiving: 0
 --- !u!58 &6257394000795317754
 CircleCollider2D:
   m_ObjectHideFlags: 0

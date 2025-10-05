@@ -13,4 +13,10 @@ public class Card
     public string color = "";
     [Inspectable]
     public int grade = 0;
+
+    [Inspectable]
+    public Sprite iconArt = null;
+
+    [Inspectable]
+    public Sprite fullArt = null;
 }

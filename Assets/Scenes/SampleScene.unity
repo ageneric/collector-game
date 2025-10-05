@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
-  m_Color: {r: 0.28794357, g: 0.990566, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.99215686, b: 0.94458693, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2325,6 +2325,8 @@ MonoBehaviour:
     type: 
     color: 
     grade: 0
+    iconArt: {fileID: 0}
+    fullArt: {fileID: 0}
   speed: 3
   accelerationTime: 0.125
   decelerationTime: 0.03
@@ -2351,21 +2353,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 362432197329474868, guid: 6a31aa5aa3f42cc4a859f573ff2850e5, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 362432197329474868, guid: 6a31aa5aa3f42cc4a859f573ff2850e5, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 362432197329474868, guid: 6a31aa5aa3f42cc4a859f573ff2850e5, type: 3}
-      propertyPath: m_Color.r
-      value: 0.98929596
-      objectReference: {fileID: 0}
     - target: {fileID: 3290796616115230920, guid: 6a31aa5aa3f42cc4a859f573ff2850e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.56
+      value: -6.72
       objectReference: {fileID: 0}
     - target: {fileID: 3290796616115230920, guid: 6a31aa5aa3f42cc4a859f573ff2850e5, type: 3}
       propertyPath: m_LocalPosition.y

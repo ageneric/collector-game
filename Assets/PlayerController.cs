@@ -38,6 +38,13 @@ public class PlayerController : MonoBehaviour
 
         // --- INTERACTION LOGIC ---
         playerInteraction.MessageOverlappingColliders(gameObject.transform.position);
+
+        if(Input.GetButtonDown("Interact") && playerInteraction.selectedCollider != null)
+        {
+            playerInteraction.selectedCollider.SendMessage(
+                "Interact", this
+            );
+        }
     }
 
     private void FixedUpdate()
