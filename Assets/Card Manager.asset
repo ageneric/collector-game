@@ -19,3 +19,9 @@ MonoBehaviour:
     grade: 1
     iconArt: {fileID: 0}
     fullArt: {fileID: 0}
+  - name: Heal
+    type: FOIL
+    color: GREEN
+    grade: 4
+    iconArt: {fileID: 0}
+    fullArt: {fileID: 0}

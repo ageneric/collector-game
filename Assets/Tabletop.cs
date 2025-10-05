@@ -20,6 +20,26 @@ public class Tabletop : MonoBehaviour
         myCollider = GetComponent<Collider2D>();
     }
 
+    void Interact(PlayerController player)
+    {
+        Debug.Log("Interacted!", player);
+        if (hasCard)
+        {
+            Card newCard = new Card(player.card);
+            player.card = card;
+            card = newCard;
+            hasCard = false;
+            card = null;
+        }
+        else
+        {
+            Card newCard = new Card(player.card);
+            card = newCard;
+            player.card = null;
+            hasCard = true;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

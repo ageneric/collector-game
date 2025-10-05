@@ -2837,9 +2837,9 @@ MonoBehaviour:
     grade: 0
     iconArt: {fileID: 0}
     fullArt: {fileID: 0}
-  speed: 3
-  accelerationTime: 0.125
-  decelerationTime: 0.03
+  speed: 5
+  accelerationTime: 0.1
+  decelerationTime: 0.2
   playerInteraction: {fileID: 0}
 --- !u!114 &1960903297
 MonoBehaviour:
