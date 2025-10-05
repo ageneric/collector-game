@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+
+    [Header("Player State")]
+    public Card card;
+
     [Header("Movement Settings")]
     [SerializeField] private float speed = 15f;
     [SerializeField] private float accelerationTime = 0.2f;
@@ -14,10 +19,13 @@ public class PlayerController : MonoBehaviour
  
     private Vector2 moveDirection;
     private Rigidbody2D rb;
+    public PlayerInteraction playerInteraction;
 
     private void Awake()
     {
+        Instance = this;
         rb = GetComponent<Rigidbody2D>();
+        playerInteraction = GetComponent<PlayerInteraction>();
     }
 
     void Update()
@@ -25,6 +33,9 @@ public class PlayerController : MonoBehaviour
         // Get raw input for immediate response
         moveDirection.x = Input.GetAxisRaw("Horizontal");
         moveDirection.y = Input.GetAxisRaw("Vertical");
+
+        // --- INTERACTION LOGIC ---
+        playerInteraction.MessageOverlappingColliders(gameObject.transform.position);
     }
 
     private void FixedUpdate()
