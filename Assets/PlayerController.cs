@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Test comment
+
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
